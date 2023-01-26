@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav-container{
+    position: fixed;
+    left: 50%;
+    bottom: -20%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    overflow: scroll;
+}
+#nav-container::-webkit-scrollbar{
+    display:none;
+}
+
+.nav-cell{
+    box-sizing: border-box;
+    width: 30%;
+    height: 30%;
+    border-radius: 20%;
+    position: relative;
+    margin: 5px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration-line: none;
+}
+.nav-delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: transparent 1px solid;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 900;
+    color: transparent;
+}
+
+.nav-delete:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#nav-form input{
+    width: 90%;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px white solid;
+    box-shadow: 0 1px 0 black,0 2px 0 rgba(0, 0, 0, 0.6),0 3px 0 rgba(0, 0, 0, 0.3);
+    color: transparent;
+    text-shadow: white 0 0 0,black 1px 1px 1px,black   2px 2px 2px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.nav-inicial{
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-weight: normal;
+    text-shadow: black 1px 1px 1px,black   2px 2px 2px;
+}
+
+#nav-form input::placeholder{
+    color: transparent;
+    font-size: 20px;
+}

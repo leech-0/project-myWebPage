@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#clock-container{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    display:block;
+    font-size: 100px;
+    font-weight: 900;
+    padding: 20px 0 0 0;
+    width:400px ;
+    text-align: center;
+    color: rgba(255, 255,255,1);
+    text-shadow:  1px 1px 1px black, 3px 3px 3px black, 9px 9px 9px black;
+
+}
+
+#clockmediriem{
+    display: inline-block;
+    font-size: 30%;
+    padding: 0 0 0 5px;
+}
+
+
+
+#clock-num{
+    display: inline-block;
+    font-size: 100%;
+}

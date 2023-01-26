@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sources/background.css" />
+    <link rel="stylesheet" href="sources/clock.css" />
+    <link rel="stylesheet" href="sources/login.css" />
+    <link rel="stylesheet" href="sources/nav.css" />
+    <link rel="stylesheet" href="sources/todo.css" />
+    <title>MyWebSite</title>
+  </head>
+  <body onresize="parent.resizeTo(800,600)" onload="parent.resizeTo(800,600)">
+    <div id="login-container">
+      <form id="login-form" class="hidden">
+        <div>Hi, What's your name?</div>
+        <input
+          type="text"
+          id="login-input"
+          autofocus
+          required
+          maxlength="10"
+          autocomplete="off"
+        />
+      </form>
+      <div id="greeting" class="hidden"></div>
+    </div>
+
+    <div id="clock-container"></div>
+
+    <div id="nav-container">
+      <form id="nav-form">
+        <input
+          type="text"
+          required
+          minlength="15"
+          placeholder="enter website url..."
+        />
+      </form>
+    </div>
+
+    <div id="todo-container">
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          required
+          autocomplete="off"
+          placeholder="what to do?"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="sources/todo.js"></script>
+    <script src="sources/clock.js"></script>
+    <script src="sources/background.js"></script>
+    <script src="sources/login.js"></script>
+    <script src="sources/nav.js"></script>
+  </body>
+</html>
